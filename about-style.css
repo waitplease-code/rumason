@@ -61,11 +61,15 @@ main .back {
 
     & h2 {
         background-color: white;
-        opacity: 0.9;
+        opacity: 1;
         padding: 2%;
     }
 }
 
 main .about {
     text-align: center;
+    margin: 100px auto;
+    width: 60%;
+    line-height: 1.6;
+    
 }
