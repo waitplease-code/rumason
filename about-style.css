@@ -52,16 +52,15 @@ main .back {
     
     justify-content: center;
     align-items: center;
-    background-image: url(images/pexels-photo-106399.jpg);
-    height: 100vh;
+    background-image: url(images/house-1477041_640.jpg);
+    height: 100dvh;
     
     
     background-repeat: no-repeat;
-    background-size: cover; /* Add this line */
+    background-size: cover; 
 
     & h2 {
         background-color: white;
-        opacity: 1;
         padding: 2%;
     }
 }
@@ -71,5 +70,5 @@ main .about {
     margin: 100px auto;
     width: 60%;
     line-height: 1.6;
-    
+
 }

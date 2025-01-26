@@ -48,13 +48,21 @@ header {
 }
 
 main .first {
-    & img {
-        width: 100%;
-        height: 100vh;
-        object-fit: cover;
-    }
-    & h1 {
-        text-align: center;
+    display: flex;
+    
+    justify-content: center;
+    align-items: center;
+    background-image: url(images/house-1477041_640.jpg);
+    height: 100dvh;
+    
+    
+    background-repeat: no-repeat;
+    background-size: cover; 
+
+    h1 {
+        background-color: white;
+        opacity: 1;
+        padding: 2%;
     }
 }
 
@@ -62,15 +70,14 @@ main .projects {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    
+    /** REMOVE h2, ONLY DO a WITH BACKGROUND IMAGE. USE FLEX-GROW TO TAKE UP SPACE ONCE DONE. CAN REMOVE DIV ELEMENTS TOO*/
     & div {
         width: max(400px, 45%);
         display: flex;
         align-items: center;
         justify-content: center;
-        margin: 20px;
+        margin-top: 50px;
         
-
         &:hover {
             & img {
                 filter:brightness(0.5);
@@ -83,7 +90,7 @@ main .projects {
     }
 
     & a {
-        width: max(500px, 100%);
+        min-width: fit-content;
     }
     
     & img {
